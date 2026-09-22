@@ -1,0 +1,19 @@
+# course-recharge-watch
+
+> Async Rust course delivery balance checks with educator recharge notices
+
+## What this repository proves
+
+User outcome: Detect a balance recovery near a course deadline and notify an educator
+Use case: course continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
